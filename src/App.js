@@ -4,7 +4,7 @@ import { useState } from 'react';
 import colorWheelLogo from './colorwheel.png';
 
 function Randomcolor() {
-  const [color, setColor] = useState('#fff');
+  const [color, setColor] = useState('');
   return (
     <div className="Get-random-color">
       <button onClick={() => setColor(randomColor())}>
