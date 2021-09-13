@@ -13,6 +13,7 @@ function Randomcolor() {
       <p>
         Hex-code of your color: <span>{color}</span>
       </p>
+      <p>Example:</p>
       <div
         style={{
           width: '70%',
