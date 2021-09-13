@@ -1,11 +1,18 @@
 import randomColor from 'randomcolor';
+import { useState } from 'react';
 // import './App.css';
 import colorWheelLogo from './colorwheel.png';
 
 function Randomcolor() {
+  const [color, setColor] = useState('#fff');
   return (
     <div className="Get-random-color">
-      <button>generate random color</button>
+      <button onClick={() => setColor(randomColor())}>
+        generate random color
+      </button>
+      <p>
+        Hex-code of your color: <span>{color}</span>
+      </p>
     </div>
   );
 }
