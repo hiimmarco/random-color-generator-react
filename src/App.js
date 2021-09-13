@@ -1,5 +1,14 @@
+import randomColor from 'randomcolor';
 // import './App.css';
 import colorWheelLogo from './colorwheel.png';
+
+function Randomcolor() {
+  return (
+    <div className="Get-random-color">
+      <button>generate random color</button>
+    </div>
+  );
+}
 
 function App() {
   return (
@@ -16,14 +25,7 @@ function App() {
         <p>Welcome to</p>
         <h1>awesome color generator</h1>
       </header>
-    </div>
-  );
-}
-
-function Randomcolor() {
-  return (
-    <div className="Randomcolor">
-      <p>Hello World!</p>
+      <Randomcolor></Randomcolor>
     </div>
   );
 }
