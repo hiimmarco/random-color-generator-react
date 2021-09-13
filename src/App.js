@@ -1,6 +1,6 @@
+import './App.css';
 import randomColor from 'randomcolor';
 import { useState } from 'react';
-// import './App.css';
 import colorWheelLogo from './colorwheel.png';
 
 function Randomcolor() {
@@ -13,6 +13,16 @@ function Randomcolor() {
       <p>
         Hex-code of your color: <span>{color}</span>
       </p>
+      <div
+        style={{
+          width: '70%',
+          height: '100px',
+          border: '1px solid #000',
+          margin: '0 auto',
+        }}
+      >
+        This is a rectangle!
+      </div>
     </div>
   );
 }
