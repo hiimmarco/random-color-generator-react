@@ -1,23 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+// import './App.css';
+import colorWheelLogo from './colorwheel.png';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <nav>
+          <ul>
+            <li>
+              <a href="..">Marco Bogner</a>
+            </li>
+          </ul>
+        </nav>
+        <img src={colorWheelLogo} alt="Color Wheel Logo" />
+        <p>Welcome to</p>
+        <h1>awesome color generator</h1>
       </header>
+    </div>
+  );
+}
+
+function Randomcolor() {
+  return (
+    <div className="Randomcolor">
+      <p>Hello World!</p>
     </div>
   );
 }
