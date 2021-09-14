@@ -26,7 +26,7 @@ body {
 }
 
 .dividerHeadline {
-  font-weight: 600;
+  font-weight: 700;
   font-size: 1rem;
 }
 
@@ -81,6 +81,7 @@ nav li {
 
 .randomButton {
   max-width: 300px;
+  height: auto;
   padding: 20px;
   margin: auto;
   text-transform: uppercase;
@@ -92,6 +93,22 @@ nav li {
   border-radius: 5px;
   margin-bottom: 2.2rem;
   cursor: pointer;
+}
+
+.specificButton {
+  max-width: 300px;
+  padding: 20px;
+  margin: auto;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #2e00b1;
+  background-color: #ffffff;
+  border: 2px solid #2e00b1;
+  border-radius: 5px;
+  margin-bottom: 2.2rem;
+  cursor: pointer;
+  margin-top: 2rem;
 }
 
 .hexLine {
@@ -123,4 +140,23 @@ nav li {
   text-align: center;
   font-size: 1rem;
   font-weight: 700;
+  margin-bottom: 3rem;
+}
+
+.colorform {
+  display: grid;
+}
+
+.forminput {
+  display: grid;
+  width: 300px;
+  height: 32px;
+  border: 1px solid rgb(232, 231, 231);
+}
+
+.formlabel {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  padding-left: 40px;
 }

@@ -23,16 +23,17 @@ function Specificcolor() {
   const [color, setColor] = useState('');
   return (
     <div className="Get-specific-color">
-      <form>
-        <label>
+      <form className="colorform">
+        <label className="formlabel" id="hue">
           Hue:
-          <input type="text" name="hue" />
+          <input className="forminput" type="text" name="hue" />
         </label>
 
-        <label>
+        <label className="formlabel" id="lightness">
           Lightness:
-          <input type="text" name="lightness" />
+          <input className="forminput" type="text" name="lightness" />
         </label>
+        <button className="specificButton">generate color</button>
       </form>
     </div>
   );
