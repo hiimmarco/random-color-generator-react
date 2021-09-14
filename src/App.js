@@ -14,37 +14,33 @@ function Randomcolor() {
         Hex-code of your color: <span>{color}</span>
       </p>
       <p>Example:</p>
-      <div
-        style={{
-          width: '70%',
-          height: '100px',
-          border: '1px solid #000',
-          margin: '0 auto',
-        }}
-      >
-        This is a rectangle!
-      </div>
+      <div className="colorBox"></div>
     </div>
   );
 }
 
 function App() {
   return (
-    <div className="App">
+    <main className="App">
       <header className="App-header">
-        <nav>
+        <nav className="topnav">
           <ul>
             <li>
               <a href="..">Marco Bogner</a>
             </li>
           </ul>
         </nav>
-        <img src={colorWheelLogo} alt="Color Wheel Logo" />
-        <p>Welcome to</p>
+        <img
+          className="headerImage"
+          src={colorWheelLogo}
+          alt="Color Wheel Logo"
+        />
+        <p className="dividerHeadline">Welcome to</p>
         <h1>awesome color generator</h1>
       </header>
       <Randomcolor></Randomcolor>
-    </div>
+      <p>or get a specific color</p>
+    </main>
   );
 }
 
