@@ -39,7 +39,7 @@ function App() {
         <h1>awesome color generator</h1>
       </header>
       <Randomcolor></Randomcolor>
-      <p>or get a specific color</p>
+      <p className="dividerText">or get a specific color</p>
     </main>
   );
 }

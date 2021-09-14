@@ -112,9 +112,15 @@ nav li {
 
 .colorBox {
   width: 85%;
-
   color: rgb(255, 255, 255);
   border: none;
   border-radius: 5px;
   background-color: rgb(21, 21, 21);
+  margin-bottom: 2.5rem;
+}
+
+.dividerText {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 700;
 }
