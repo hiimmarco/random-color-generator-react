@@ -10,10 +10,10 @@ function Randomcolor() {
       <button className="randomButton" onClick={() => setColor(randomColor())}>
         generate random color
       </button>
-      <p>
-        Hex-code of your color: <span>{color}</span>
+      <p className="hexLine">
+        Hex-code of your color: <span className="hexCode">{color}</span>
       </p>
-      <p>Example:</p>
+      <p className="example">Example:</p>
       <div className="colorBox"></div>
     </div>
   );
