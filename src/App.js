@@ -43,13 +43,6 @@ function App() {
   return (
     <main className="App">
       <header className="App-header">
-        <nav className="topnav">
-          <ul>
-            <li>
-              <a href="..">Marco Bogner</a>
-            </li>
-          </ul>
-        </nav>
         <img
           className="headerImage"
           src={colorWheelLogo}
@@ -59,7 +52,7 @@ function App() {
         <h1>awesome color generator</h1>
       </header>
       <Randomcolor></Randomcolor>
-      <p className="dividerText">or get a specific color</p>
+      <p className="dividerText">––– or get a specific color –––</p>
       <Specificcolor></Specificcolor>
     </main>
   );

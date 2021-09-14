@@ -129,6 +129,7 @@ nav li {
 
 .colorBox {
   width: 85%;
+  height: 32px;
   color: rgb(255, 255, 255);
   border: none;
   border-radius: 5px;
