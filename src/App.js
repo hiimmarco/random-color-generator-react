@@ -7,7 +7,7 @@ function Randomcolor() {
   const [color, setColor] = useState('');
   return (
     <div className="Get-random-color">
-      <button onClick={() => setColor(randomColor())}>
+      <button className="randomButton" onClick={() => setColor(randomColor())}>
         generate random color
       </button>
       <p>
