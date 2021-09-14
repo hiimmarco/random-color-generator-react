@@ -19,6 +19,25 @@ function Randomcolor() {
   );
 }
 
+function Specificcolor() {
+  const [color, setColor] = useState('');
+  return (
+    <div className="Get-specific-color">
+      <form>
+        <label>
+          Hue:
+          <input type="text" name="hue" />
+        </label>
+
+        <label>
+          Lightness:
+          <input type="text" name="lightness" />
+        </label>
+      </form>
+    </div>
+  );
+}
+
 function App() {
   return (
     <main className="App">
@@ -40,6 +59,7 @@ function App() {
       </header>
       <Randomcolor></Randomcolor>
       <p className="dividerText">or get a specific color</p>
+      <Specificcolor></Specificcolor>
     </main>
   );
 }
