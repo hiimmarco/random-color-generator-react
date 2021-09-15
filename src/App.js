@@ -16,7 +16,16 @@ function Randomcolor() {
         Hex-code of your color: <span className="hexCode">{color}</span>
       </p>
       <p className="example">Example:</p>
-      <div className="colorBox" style={{ backgroundColor: `${color}` }}></div>
+      <div
+        className="colorBox"
+        style={{
+          backgroundColor: `${color}`,
+          borderColor: `${color}`,
+          color: `${color}`,
+        }}
+      >
+        no color generated
+      </div>
     </div>
   );
 }
