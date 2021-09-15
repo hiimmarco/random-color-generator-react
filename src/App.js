@@ -3,6 +3,8 @@ import randomColor from 'randomcolor';
 import { useState } from 'react';
 import colorWheelLogo from './colorwheel.png';
 
+// Create component for random color generation without hue and luminosity
+
 function Randomcolor() {
   const [color, setColor] = useState('');
   return (
@@ -18,6 +20,8 @@ function Randomcolor() {
     </div>
   );
 }
+
+// Create component for color generation with hue and luminosity
 
 function Specificcolor() {
   const [color, setColor] = useState('');
@@ -38,6 +42,8 @@ function Specificcolor() {
     </div>
   );
 }
+
+// Create main app
 
 function App() {
   return (
