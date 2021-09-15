@@ -6,16 +6,16 @@ import colorWheelLogo from './colorwheel.png';
 // Create component for random color generation without hue and luminosity
 
 function Randomcolor() {
-  const [color, setColor] = useState('');
+  const [color, setColor] = useState('no color generated');
   return (
     <div className="Get-random-color">
       <button className="randomButton" onClick={() => setColor(randomColor())}>
-        generate random color
+        Generate random color
       </button>
       <p className="hexLine">
         Hex-code of your color: <span className="hexCode">{color}</span>
       </p>
-      <p className="example">Example:</p>
+      <p className="example">See your color in action:</p>
       <div
         className="colorBox"
         style={{
@@ -36,18 +36,30 @@ function Specificcolor() {
   const [color, setColor] = useState('');
   return (
     <div className="Get-specific-color">
-      <form className="colorform">
-        <label className="formlabel" id="hue">
-          Hue:
-          <input className="forminput" type="text" name="hue" />
-        </label>
+      <label className="formlabel" id="hue">
+        Hue:
+        <input className="forminput" type="text" name="hue" />
+      </label>
 
-        <label className="formlabel" id="lightness">
-          Lightness:
-          <input className="forminput" type="text" name="lightness" />
-        </label>
-        <button className="specificButton">generate color</button>
-      </form>
+      <label className="formlabel" id="luminosity">
+        Luminosity:
+        <input className="forminput" type="text" name="luminosity" />
+      </label>
+      <button className="specificButton">Generate color</button>
+      <p className="hexLine">
+        Hex-code of your color: <span className="hexCode">{color}</span>
+      </p>
+      <p className="example">See your color in action:</p>
+      <div
+        className="colorBox"
+        style={{
+          backgroundColor: `${color}`,
+          borderColor: `${color}`,
+          color: `${color}`,
+        }}
+      >
+        no color generated
+      </div>
     </div>
   );
 }
@@ -64,7 +76,7 @@ function App() {
           alt="Color Wheel Logo"
         />
         <p className="dividerHeadline">Welcome to</p>
-        <h1>awesome color generator</h1>
+        <h1>Awesome Color Generator</h1>
       </header>
       <Randomcolor></Randomcolor>
       <p className="dividerText">––– or get a specific color –––</p>
