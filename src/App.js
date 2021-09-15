@@ -7,24 +7,27 @@ import colorWheelLogo from './colorwheel.png';
 
 function Randomcolor() {
   const [color, setColor] = useState('no color generated');
+  const [show, setShow] = useState(false);
   return (
     <div className="Get-random-color">
       <button className="randomButton" onClick={() => setColor(randomColor())}>
         Generate random color
       </button>
-      <p className="hexLine">
-        Hex-code of your color: <span className="hexCode">{color}</span>
-      </p>
-      <p className="example">See your color in action:</p>
-      <div
-        className="colorBox"
-        style={{
-          backgroundColor: `${color}`,
-          borderColor: `${color}`,
-          color: `${color}`,
-        }}
-      >
-        no color generated
+      <div classname="hideandshowrandom">
+        <p className="hexLine">
+          Hex-code of your color: <span className="hexCode">{color}</span>
+        </p>
+        <p className="example">See your color in action:</p>
+        <div
+          className="colorBox"
+          style={{
+            backgroundColor: `${color}`,
+            borderColor: `${color}`,
+            color: `${color}`,
+          }}
+        >
+          no color generated
+        </div>
       </div>
     </div>
   );
@@ -45,7 +48,12 @@ function Specificcolor() {
         Luminosity:
         <input className="forminput" type="text" name="luminosity" />
       </label>
-      <button className="specificButton">Generate color</button>
+      <button
+        className="specificButton"
+        onClick={() => setColor(randomColor())}
+      >
+        Generate color
+      </button>
       <p className="hexLine">
         Hex-code of your color: <span className="hexCode">{color}</span>
       </p>
