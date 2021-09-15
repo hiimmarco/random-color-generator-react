@@ -45,6 +45,7 @@ function Specificcolor() {
         Hue:
         <input
           className="forminput"
+          placeholder="e.g. 'blue'"
           value={hue}
           onChange={(event) => setHue(event.currentTarget.value)}
         />
@@ -54,6 +55,7 @@ function Specificcolor() {
         Luminosity:
         <input
           className="forminput"
+          placeholder="e.g. 'dark'"
           value={luminosity}
           onChange={(event) => setLuminosity(event.currentTarget.value)}
         />
