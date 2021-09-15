@@ -6,8 +6,8 @@ import colorWheelLogo from './colorwheel.png';
 // Create component for random color generation without hue and luminosity
 
 function Randomcolor() {
+  // const [show, setShow] = useState(false);
   const [color, setColor] = useState('no color generated');
-  const [show, setShow] = useState(false);
   return (
     <div className="Get-random-color">
       <button className="randomButton" onClick={() => setColor(randomColor())}>
@@ -37,20 +37,32 @@ function Randomcolor() {
 
 function Specificcolor() {
   const [color, setColor] = useState('');
+  const [hue, setHue] = useState('');
+  const [luminosity, setLuminosity] = useState('');
   return (
     <div className="Get-specific-color">
       <label className="formlabel" id="hue">
         Hue:
-        <input className="forminput" type="text" name="hue" />
+        <input
+          className="forminput"
+          value={hue}
+          onChange={(event) => setHue(event.currentTarget.value)}
+        />
       </label>
 
       <label className="formlabel" id="luminosity">
         Luminosity:
-        <input className="forminput" type="text" name="luminosity" />
+        <input
+          className="forminput"
+          value={luminosity}
+          onChange={(event) => setLuminosity(event.currentTarget.value)}
+        />
       </label>
       <button
         className="specificButton"
-        onClick={() => setColor(randomColor())}
+        onClick={() =>
+          setColor(randomColor({ luminosity: `${luminosity}`, hue: `${hue}` }))
+        }
       >
         Generate color
       </button>
