@@ -14,3 +14,10 @@ Figma Project: https://www.figma.com/file/3ZqQTPiEpN1EPHuXu8TA0Q/Random-Color-Ge
 
 ### Specified color
 ![Specified-Color](https://user-images.githubusercontent.com/25134498/133763535-fe5f72cc-cdb1-44d4-8228-5da650667e00.png)
+
+
+## React Components
+ - Header
+ - Random color generator function (npm randomcolor)
+ - Function component with button and output fields to generate and show random color
+ - Function component with input fields, a button and output fields to generate and show a desired color
