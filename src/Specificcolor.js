@@ -6,6 +6,7 @@ function Specificcolor() {
   const [color, setColor] = useState('');
   const [hue, setHue] = useState('');
   const [luminosity, setLuminosity] = useState('');
+  const [display, setDisplay] = useState(false);
   return (
     <div className="Get-specific-color">
       <label className="formlabel" id="hue">
@@ -29,13 +30,14 @@ function Specificcolor() {
       </label>
       <button
         className="specificButton"
-        onClick={() =>
-          setColor(randomColor({ luminosity: `${luminosity}`, hue: `${hue}` }))
-        }
+        onClick={() => {
+          setColor(randomColor({ luminosity: `${luminosity}`, hue: `${hue}` }));
+          setDisplay(true);
+        }}
       >
         Generate color
       </button>
-      <Colorinfo newcolor={color} />
+      {display && <Colorinfo newcolor={color} />}
     </div>
   );
 }

@@ -5,12 +5,19 @@ import Colorinfo from './Colorinfo';
 function Randomcolor() {
   // const [show, setShow] = useState(false);
   const [color, setColor] = useState('no color generated');
+  const [display, setDisplay] = useState(false);
   return (
     <div className="Get-random-color">
-      <button className="randomButton" onClick={() => setColor(randomColor())}>
+      <button
+        className="randomButton"
+        onClick={() => {
+          setColor(randomColor());
+          setDisplay(true);
+        }}
+      >
         Generate random color
       </button>
-      <Colorinfo newcolor={color} />
+      {display && <Colorinfo newcolor={color} />}
     </div>
   );
 }

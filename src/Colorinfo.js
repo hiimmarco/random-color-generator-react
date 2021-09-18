@@ -11,7 +11,7 @@ function Colorinfo(props) {
     <div classname="hideandshowrandom">
       <p className="hexLine">
         Hex-code of your color:
-        <span className="hexCode">{props.newcolor}</span>
+        <span className="hexCode"> {props.newcolor}</span>
       </p>
       <p className="example">See your color in action:</p>
       <div className="colorBox" style={newStyle}>
