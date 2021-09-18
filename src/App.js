@@ -1,6 +1,7 @@
 import './App.css';
 import randomColor from 'randomcolor';
 import { useState } from 'react';
+import Colorinfo from './Colorinfo';
 import colorWheelLogo from './colorwheel.png';
 
 // Create component for random color generation without hue and luminosity
@@ -13,22 +14,7 @@ function Randomcolor() {
       <button className="randomButton" onClick={() => setColor(randomColor())}>
         Generate random color
       </button>
-      <div classname="hideandshowrandom">
-        <p className="hexLine">
-          Hex-code of your color: <span className="hexCode">{color}</span>
-        </p>
-        <p className="example">See your color in action:</p>
-        <div
-          className="colorBox"
-          style={{
-            backgroundColor: `${color}`,
-            borderColor: `${color}`,
-            color: `${color}`,
-          }}
-        >
-          no color generated
-        </div>
-      </div>
+      <Colorinfo newcolor={color} />
     </div>
   );
 }
