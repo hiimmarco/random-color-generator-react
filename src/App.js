@@ -54,20 +54,7 @@ function Specificcolor() {
       >
         Generate color
       </button>
-      <p className="hexLine">
-        Hex-code of your color: <span className="hexCode">{color}</span>
-      </p>
-      <p className="example">See your color in action:</p>
-      <div
-        className="colorBox"
-        style={{
-          backgroundColor: `${color}`,
-          borderColor: `${color}`,
-          color: `${color}`,
-        }}
-      >
-        no color generated
-      </div>
+      <Colorinfo newcolor={color} />
     </div>
   );
 }
@@ -86,9 +73,9 @@ function App() {
         <p className="dividerHeadline">Welcome to</p>
         <h1>Awesome Color Generator</h1>
       </header>
-      <Randomcolor></Randomcolor>
+      <Randomcolor />
       <p className="dividerText">––– or get a specific color –––</p>
-      <Specificcolor></Specificcolor>
+      <Specificcolor />
     </main>
   );
 }
