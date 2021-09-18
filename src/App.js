@@ -1,63 +1,11 @@
 import './App.css';
-import randomColor from 'randomcolor';
-import { useState } from 'react';
-import Colorinfo from './Colorinfo';
 import colorWheelLogo from './colorwheel.png';
+import Randomcolor from './Randomcolor';
+import Specificcolor from './Specificcolor';
 
 // Create component for random color generation without hue and luminosity
 
-function Randomcolor() {
-  // const [show, setShow] = useState(false);
-  const [color, setColor] = useState('no color generated');
-  return (
-    <div className="Get-random-color">
-      <button className="randomButton" onClick={() => setColor(randomColor())}>
-        Generate random color
-      </button>
-      <Colorinfo newcolor={color} />
-    </div>
-  );
-}
-
 // Create component for color generation with hue and luminosity
-
-function Specificcolor() {
-  const [color, setColor] = useState('');
-  const [hue, setHue] = useState('');
-  const [luminosity, setLuminosity] = useState('');
-  return (
-    <div className="Get-specific-color">
-      <label className="formlabel" id="hue">
-        Hue:
-        <input
-          className="forminput"
-          placeholder="e.g. 'blue'"
-          value={hue}
-          onChange={(event) => setHue(event.currentTarget.value)}
-        />
-      </label>
-
-      <label className="formlabel" id="luminosity">
-        Luminosity:
-        <input
-          className="forminput"
-          placeholder="e.g. 'dark'"
-          value={luminosity}
-          onChange={(event) => setLuminosity(event.currentTarget.value)}
-        />
-      </label>
-      <button
-        className="specificButton"
-        onClick={() =>
-          setColor(randomColor({ luminosity: `${luminosity}`, hue: `${hue}` }))
-        }
-      >
-        Generate color
-      </button>
-      <Colorinfo newcolor={color} />
-    </div>
-  );
-}
 
 // Create main app
 
