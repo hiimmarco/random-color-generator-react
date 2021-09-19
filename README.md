@@ -1,6 +1,6 @@
 # MB - Random Color Generator React
 
-This is a random color generator built with react.
+This is a random color generator built with react. It can either create a completely random color or a random color based on hue and luminosity (e.g. "blue" and "dark).
 
 
 ## Design
@@ -19,5 +19,10 @@ Figma Project: https://www.figma.com/file/3ZqQTPiEpN1EPHuXu8TA0Q/Random-Color-Ge
 ## React Components
  - Header
  - Random color generator function (npm randomcolor)
- - Function component with button and output fields to generate and show random color
- - Function component with input fields, a button and output fields to generate and show a desired color
+ - Function component with button to generate and show random color
+ - Function component with input fields and a button to generate a random color based on user input
+ - Output fields to generate and show random color
+
+The components for random color and random color based on user input are two seperate components which both interact with a single component providing the hex value as well as an example of the generated color.
+
+While the components for random color and random color based on user input will be rendered by default, the component roviding the hex value as well as an example of the generated color will only be rendered after the frist click on the respective button.
