@@ -31,7 +31,7 @@ function Specificcolor() {
       <button
         className="specificButton"
         onClick={() => {
-          setColor(randomColor({ luminosity: `${luminosity}`, hue: `${hue}` }));
+          setColor(randomColor({ luminosity: luminosity, hue: hue }));
           setDisplay(true);
         }}
       >
