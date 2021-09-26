@@ -133,6 +133,7 @@ nav li {
   border-radius: 5px;
   margin-bottom: 2.5rem;
   text-align: center;
+  border: none;
 }
 
 .dividerText {

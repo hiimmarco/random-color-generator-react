@@ -3,8 +3,6 @@ import React from 'react';
 function Colorinfo(props) {
   const newStyle = {
     backgroundColor: props.newcolor,
-    borderColor: props.newcolor,
-    color: props.newcolor,
   };
 
   return (
@@ -14,9 +12,7 @@ function Colorinfo(props) {
         <span className="hexCode"> {props.newcolor}</span>
       </p>
       <p className="example">See your color in action:</p>
-      <div className="colorBox" style={newStyle}>
-        no color generated
-      </div>
+      <div className="colorBox" style={newStyle} />
     </div>
   );
 }
