@@ -9,8 +9,7 @@ function Specificcolor() {
   const [display, setDisplay] = useState(false);
   return (
     <div className="Get-specific-color">
-      <label className="formlabel" id="hue">
-        Hue:
+      <label className="formlabel">
         <input
           className="forminput"
           placeholder="e.g. 'blue'"
@@ -19,8 +18,7 @@ function Specificcolor() {
         />
       </label>
 
-      <label className="formlabel" id="luminosity">
-        Luminosity:
+      <label className="formlabel">
         <input
           className="forminput"
           placeholder="e.g. 'dark'"
